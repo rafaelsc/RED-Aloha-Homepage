@@ -1,24 +1,31 @@
-html{
-    text-align: center;
-}
-
-body{
+body {
     width: 1240px;
     color: #2d2d2d;
     font-size: 16px;
     font-family: 'Raleway Light';
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Raleway Light';
+    color: #e2574c;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
 .container {
     width: 1240px;
+}
+
+
+.hideText{
+    font-size: 0;
 }
 
 .logo {
@@ -31,41 +38,80 @@ ul{
 }
 
 .shoppingCard {
+    position: relative;
     width: 80px;
     height: 80px;
-    background-image: url(img/cart-icon.svg); 
+}
+.shoppingCardImg {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 80px;
+    height: 80px;
+    background-image: url(img/cart-icon.svg);
     background-repeat: no-repeat;
     background-size: 80px 80px;
-    font-size: 0;
+}
+.shoppingCardItens {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blue
 }
 
+/*-------------------------------*/
+
 .hero {
-    height: 383px;
-    text-align: center;
+    position: relative;
+    height: 500px;
     color: white;
-    background-image: url(img/flower-bkgd.jpg);
+    background: url(img/flower-bkgd.jpg) top left no-repeat;
+    background-attachment: fixed;
 }
 
 .hero section {
-    vertical-align: middle;
+    background-color: green; /* for vizualization purposes */
+    text-align: center;
+}
+
+.hero .text {
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    background-color: red; /* for vizualization purposes */
+    display: inline-block;
+}
+
+.hero h2,
+.hero h3 {
+    color: white;
+    font-size: 20pt;
+    text-shadow: 1px 1px rgba(100,100,100,.5); 
+}
+.hero h3 {
+    font-size: 300%;
 }
 
 .hero .extra1 {
-    align-self: center;
-    width: auto;
+    position: absolute;
+    bottom: 0;
+    width: 200px;
     height: 380px;
-    background-image: url(img/banner-girl.png); 
-    background-repeat: no-repeat;
+    background: url(img/banner-girl.png) bottom left no-repeat;
     background-size: auto 380px;
+
+    background-color: blue; /* for vizualization purposes */
+    display: inline-block;
 }
+
+/* --------------------------------------------------- */
 
 .subscribeSection {
     width: auto;
     height: 180px;
-    background-image: url(img/wave-bkgd.jpg); 
+    background-image: url(img/wave-bkgd.jpg);
     background-repeat: no-repeat;
     background-size: auto auto;
-    
     line-height: 20px;
 }
 
