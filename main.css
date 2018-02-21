@@ -10,13 +10,30 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+nav {
     font-family: 'Raleway Light';
     color: #e2574c;
 }
 
 ul {
     list-style-type: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 .container {
@@ -28,35 +45,87 @@ ul {
     font-size: 0;
 }
 
-.logo {
+.mainHeader{
+    width: 1240px;
+    display: inline-flex;
+}
+
+.mainHeader .logo {
     width: 120px;
-    height: 120px;
+    height: 60px;
+    margin-left: 25px;
     background-image: url(img/aloha-logo.svg);
     background-repeat: no-repeat;
     background-size: 120px 120px;
-    font-size: 0;
+    background-position-y: -30px;
+}
+.mainHeader nav{
+    width: 100%;
+}
+.mainHeader nav ul{
+    min-width: 200px;
+
+    text-transform: uppercase;
+
+    list-style: none;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+
+}
+.mainHeader nav ul li {
+    margin: 10px 10px 10px 10px;
+    display: inline;
+}
+
+.mainHeader nav a:link {
+    color: #e2574c;
+}
+
+.mainHeader nav a:visited {
+    color: #e2574c;
+}
+
+.mainHeader nav a:hover {
+    color: #e2574c;
+}
+
+.mainHeader nav a:active {
+    color: #e2574c;
 }
 
 .shoppingCard {
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
 }
-.shoppingCardImg {
+.shoppingCard .shoppingCardImg {
     position: absolute;
     top: 0;
     left: 0; 
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-image: url(img/cart-icon.svg);
     background-repeat: no-repeat;
-    background-size: 80px 80px;
+    background-size: 50px 50px;
 }
-.shoppingCardItens {
+.shoppingCard  .shoppingCardItens {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: blue
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 2px;
+    background: #73AD21;
+
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    font-weight: bolder;
 }
 
 /*-------------------------------*/
@@ -131,4 +200,34 @@ ul {
     display: inline;
     outline: none;
     border: none;
+}
+
+.mainFooter {
+    color: whitesmoke;
+    background-color: black;
+ 
+    padding: 15px 15px 15px 15px;
+    height: auto;
+
+    display: flex;
+    align-items: stretch;
+}
+
+.mainFooter section{
+    margin-right: 10px;
+    width: 100%;
+    line-height: 160%
+}
+
+
+.mainFooter section address{
+    margin-top: 10px;
+    width: 100%;
+    line-height: 120%
+}
+
+.mainFooter aside{
+    margin-right: 20px;
+    width: 300px;
+    line-height: 160%
 }
