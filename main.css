@@ -48,17 +48,28 @@ a:active {
     font-size: 0;
 }
 
+em{
+    font-weight: bolder;
+    font-style: normal;
+}
+
+::placeholder {
+    color: darkgrey;
+}
+
 /*-------------------------------*/
 
 .mainHeader{
     width: 100%;
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mainHeader .logo {
     width: 120px;
     height: 60px;
-    margin-left: 25px;
+    margin-left: 10px;
     background-image: url(img/aloha-logo.svg);
     background-repeat: no-repeat;
     background-size: 120px 120px;
@@ -76,7 +87,6 @@ a:active {
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
-
 }
 .mainHeader nav ul li {
     margin: 10px 10px 10px 10px;
@@ -103,7 +113,7 @@ a:active {
     position: relative;
     width: 60px;
     height: 60px;
-    margin-right: 25px;
+    margin-right: 10px;
 }
 .shoppingCard .shoppingCardImg {
     position: absolute;
@@ -115,7 +125,7 @@ a:active {
     background-repeat: no-repeat;
     background-size: 50px 50px;
 }
-.shoppingCard  .shoppingCardItens {
+.shoppingCard .shoppingCardItens {
     position: absolute;
     top: 0;
     right: 0;
@@ -137,12 +147,11 @@ a:active {
 
 .hero {
     position: relative;
-    height: 65vh;
+    height: 60vh;
     max-height: 600px;
     color: white;
-    background: url(img/banner-girl.png) bottom center no-repeat, url(img/flower-bkgd.jpg) top center no-repeat;
-    background-attachment: fixed, fixed;
-    background-size: auto 85%, cover;
+    background: url(img/banner-girl.png) center 90px no-repeat, url(img/flower-bkgd.jpg) top center no-repeat;
+    background-size: contain, cover;
 }
 
 .hero section {
@@ -172,8 +181,8 @@ a:active {
 
 /* --------------------------------------------------- */
 
-.middle{
-    height: 30vh;
+.about{
+    height: 35vh;
     max-height: 250px;
     display: flex;
     justify-content: center; 
@@ -181,19 +190,17 @@ a:active {
     text-align: center;
     line-height: 2rem;
     color: black;
+    font-size: 1.1rem;
 }
 
-.middle em{
-    font-weight: bolder;
+.about div{
+    padding-top: 20px;
+    max-width: 540px;
 }
 
-.middle div{
-    max-width: 550px;
-}
-
-.middle h2{
+.about h2{
     color: black;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-style: italic;
     padding-bottom: 1rem;
 }
@@ -201,11 +208,13 @@ a:active {
 /* --------------------------------------------------- */
 
 .categories{
-    width: 100%;
+    width: calc(100% + 10px);
     margin: 0px -5px;
 }
 
 .categories ul{
+    width: 100%;
+    
     list-style: none;
     text-transform: uppercase;
     font-size: 2rem;
@@ -219,25 +228,27 @@ a:active {
 }
 
 .categories ul li{
-    width: calc(25vw - 10px);
-    min-width: 150px;
-    max-width: 400px;
+    width: calc(25% - 5px);
+    min-width: 100px;
+    max-width: 350px;
     height: 25vw;
-    min-height: 150px;
-    max-height: 400px;
+    min-height: 100px;
+    max-height: 305px;
     margin: 2.5px;
 
     display: inline-flex;
     flex-flow: wrap;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
+
+    
 }
 
 .categories ul li:first-child,
 .categories ul li:last-child{
-    width: calc(50vw - 10px);
-    min-width: 300px;
-    max-width: 800px;
+    width: calc(50% - 5px);
+    min-width: 200px;
+    max-width: 650px;
 }
 
 .categories ul li div{
@@ -303,29 +314,150 @@ a:active {
 
 /* --------------------------------------------------- */
 
+.products {
+    width: 100%;
+
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.products>header {
+    width: 100%;
+
+    margin-top: 45px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    line-height: 2rem;
+}
+
+.products h2{
+    color: black;
+    font-size: 2.8rem;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+.products section{
+    width: 100%;
+}
+
+.products ul{
+    width: 100%;
+    
+    list-style: none;
+    font-size: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: space-between;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products ul li{
+    width: 22%;
+    min-width: 150px;
+    max-width: 350px;
+
+    margin: 2.5px;
+
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    width: 300px;
+    height: 450px;
+    font-size: 1rem;
+
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.product img{
+    width: 280px;
+    height: 300px;
+}
+.product figcaption{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: darkgray;
+}
+
+.product .title {
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+    font-size: 1.6rem;
+    color: #e2574c;
+}
+
+.product .price {
+    font-weight: bold; 
+    color: gray;
+}
+
+.product>footer {
+    margin-top: 20px;
+}
+
+.product>footer div {
+    width: fit-content;
+    margin: 5px;
+    border-radius: 25px;
+    padding: 15px;
+
+    background-color: black;
+    color: white;
+}
+
+.products>footer {
+    width: 100%;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    line-height: 5rem;
+}
+
+/* --------------------------------------------------- */
+
 .subscribeSection {
     background: url('img/wave-bkgd.jpg') bottom center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 30vh;
-    max-height: 250px;
+    height: 40vh;
+    max-height: 400px;
     display: inline-flex;
     flex-flow: wrap;
     justify-content: center; 
     align-items: center; 
     text-align: center;
-    line-height: 1.2em;
+    line-height: 2em;
     color: white;
 }
 
 .subscribeSection section {
     width: 100%;
-    min-width: 300px;
-
+    margin: 0, 20px, 0, 20px;
     display: inline-flex;
     justify-content: center; 
     align-items: center; 
     text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 .subscribeSection section:first-child {
     padding-top: 3rem; 
@@ -336,9 +468,6 @@ a:active {
     font-style: italic;
     padding-bottom: 1rem;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-}
-.subscribeSection em{
-    font-weight: bolder;
 }
 
 .subscribeForm {
@@ -370,12 +499,14 @@ a:active {
     border: none;
 }
 
+
 /* --------------------------------------------------- */
 
 .mainFooter {
     color: whitesmoke;
     background-color: black;
- 
+    margin-top: 10px;
+
     padding: 50px 35px;
     height: auto;
 
