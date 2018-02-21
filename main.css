@@ -1,9 +1,11 @@
+
 body {
     width: 1240px;
     color: #2d2d2d;
-    font-size: 16px;
-    font-family: 'Raleway Light';
     margin: 0 auto;
+
+    font-size: 16px;
+    font-family: 'Raleway', Arial, sans-serif;    ;
 }
 
 h1,
@@ -140,6 +142,8 @@ a:active {
 }
 
 .hero section {
+    width: 100%;
+    height: 100%;
     background-color: green; /* for vizualization purposes */
     text-align: center;
 }
@@ -174,6 +178,124 @@ a:active {
     display: inline-block;
 }
 
+
+/* --------------------------------------------------- */
+
+.middle{
+    height: 180px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    text-align: center;
+    line-height: 1.5rem;
+    color: black;
+}
+
+.middle div{
+    max-width: 550px;
+}
+
+.middle > h2{
+    font-size: 3rem;
+}
+
+/* --------------------------------------------------- */
+
+.categories{
+    margin: 0px -5px;
+}
+
+.categories ul{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: space-between;
+
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.categories ul li{
+    width: calc(25% - 5px);
+    height: 310px;
+
+    margin: 2.5px;
+
+    display: inline-flex;
+    
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.categories ul li:first-child,
+.categories ul li:last-child{
+    width: calc(50% - 5px);
+}
+
+.categories ul li div{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.categories a:link {
+    color: white;
+}
+
+.categories a:visited {
+    color: white;
+}
+
+.categories a:hover {
+    color: white;
+}
+
+.categories a:active {
+    color: white;
+}
+
+.menCat{
+    background-image: url('img/mens-category.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.trendsCat{
+    background-image: url('img/trends-category.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.glassesCat{
+    background-image: url('img/glasses-category.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.saleCat{
+    background-image: url('img/sale-category.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bagsCat{
+    background-image: url('img/bags-category.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.womenCat{
+    background-image: url('img/womens-category.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 /* --------------------------------------------------- */
 
 .subscribeSection {
@@ -203,6 +325,8 @@ a:active {
     border: none;
 }
 
+/* --------------------------------------------------- */
+
 .mainFooter {
     color: whitesmoke;
     background-color: black;
@@ -220,7 +344,6 @@ a:active {
     line-height: 160%
 }
 
-
 .mainFooter section address{
     margin-top: 10px;
     width: 100%;
@@ -232,3 +355,6 @@ a:active {
     width: 300px;
     line-height: 160%
 }
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
