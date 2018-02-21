@@ -1,6 +1,7 @@
 
 body {
-    width: 1240px;
+    min-width: 300px;
+    max-width: 1240px;
     color: #2d2d2d;
     margin: 0 auto;
 
@@ -43,13 +44,14 @@ a:active {
     width: 1240px;
 }
 
-
 .hideText{
     font-size: 0;
 }
 
+/*-------------------------------*/
+
 .mainHeader{
-    width: 1240px;
+    width: 100%;
     display: inline-flex;
 }
 
@@ -135,73 +137,71 @@ a:active {
 
 .hero {
     position: relative;
-    height: 500px;
+    height: 65vh;
+    max-height: 600px;
     color: white;
-    background: url(img/flower-bkgd.jpg) top left no-repeat;
-    background-attachment: fixed;
+    background: url(img/banner-girl.png) bottom center no-repeat, url(img/flower-bkgd.jpg) top center no-repeat;
+    background-attachment: fixed, fixed;
+    background-size: auto 85%, cover;
 }
 
 .hero section {
-    width: 100%;
     height: 100%;
-    background-color: green; /* for vizualization purposes */
-    text-align: center;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
 }
 
 .hero .text {
-    position: absolute;
-    top: 200px;
     text-align: center;
-    background-color: red; /* for vizualization purposes */
-    display: inline-block;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); 
 }
 
-.hero h2,
-.hero h3 {
+.hero h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
     color: white;
-    font-size: 20pt;
-    text-shadow: 1px 1px rgba(100,100,100,.5); 
 }
 .hero h3 {
-    font-size: 300%;
-}
-
-.hero .extra1 {
-    position: absolute;
-    bottom: 0;
-    width: 200px;
-    height: 380px;
-    background: url(img/banner-girl.png) bottom left no-repeat;
-    background-size: auto 380px;
-
-    background-color: blue; /* for vizualization purposes */
-    display: inline-block;
+    font-size: 3rem;
+    padding-top: 1rem;
+    color: white;
 }
 
 
 /* --------------------------------------------------- */
 
 .middle{
-    height: 180px;
+    height: 30vh;
+    max-height: 250px;
     display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 2rem;
     color: black;
+}
+
+.middle em{
+    font-weight: bolder;
 }
 
 .middle div{
     max-width: 550px;
 }
 
-.middle > h2{
-    font-size: 3rem;
+.middle h2{
+    color: black;
+    font-size: 2rem;
+    font-style: italic;
+    padding-bottom: 1rem;
 }
 
 /* --------------------------------------------------- */
 
 .categories{
+    width: 100%;
     margin: 0px -5px;
 }
 
@@ -219,20 +219,25 @@ a:active {
 }
 
 .categories ul li{
-    width: calc(25% - 5px);
-    height: 310px;
-
+    width: calc(25vw - 10px);
+    min-width: 150px;
+    max-width: 400px;
+    height: 25vw;
+    min-height: 150px;
+    max-height: 400px;
     margin: 2.5px;
 
     display: inline-flex;
-    
+    flex-flow: wrap;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
 }
 
 .categories ul li:first-child,
 .categories ul li:last-child{
-    width: calc(50% - 5px);
+    width: calc(50vw - 10px);
+    min-width: 300px;
+    max-width: 800px;
 }
 
 .categories ul li div{
@@ -299,28 +304,68 @@ a:active {
 /* --------------------------------------------------- */
 
 .subscribeSection {
-    width: auto;
-    height: 180px;
-    background-image: url(img/wave-bkgd.jpg);
-    background-repeat: no-repeat;
-    background-size: auto auto;
-    line-height: 20px;
+    background: url('img/wave-bkgd.jpg') bottom center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    max-height: 250px;
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    line-height: 1.2em;
+    color: white;
+}
+
+.subscribeSection section {
+    width: 100%;
+    min-width: 300px;
+
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+.subscribeSection section:first-child {
+    padding-top: 3rem; 
+}
+.subscribeSection h2{
+    color: white;
+    font-size: 2rem;
+    font-style: italic;
+    padding-bottom: 1rem;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+.subscribeSection em{
+    font-weight: bolder;
 }
 
 .subscribeForm {
-    width: 300px;
+    width: 400px;
     margin-top: 20px;
     margin-bottom: 25px;
+
+    background: white;
+    border-radius: 25px;
+    padding: 5px;
+
+    display: inline-block;
 }
 
 .subscribeForm input {
-    display: inline;
+    width: 75%;
     outline: none;
     border: none;
 }
 
+.subscribeForm button {
+    width: 20%;
+    outline: none;
+    border: none;
+}
 .subscribeForm input:focus {
-    display: inline;
+    
     outline: none;
     border: none;
 }
@@ -331,11 +376,25 @@ a:active {
     color: whitesmoke;
     background-color: black;
  
-    padding: 15px 15px 15px 15px;
+    padding: 50px 35px;
     height: auto;
 
     display: flex;
     align-items: stretch;
+}
+
+.mainFooter h2,
+.mainFooter a {
+    color: whitesmoke;
+}
+
+.mainFooter a.email{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.mainFooter address {
+    color: gray;
 }
 
 .mainFooter section{
@@ -351,8 +410,8 @@ a:active {
 }
 
 .mainFooter aside{
-    margin-right: 20px;
-    width: 300px;
+    min-width: 150px;
+    max-width: 350px;
     line-height: 160%
 }
 
