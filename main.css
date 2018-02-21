@@ -1,0 +1,88 @@
+html{
+    text-align: center;
+}
+
+body{
+    width: 1240px;
+    color: #2d2d2d;
+    font-size: 16px;
+    font-family: 'Raleway Light';
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway Light';
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container {
+    width: 1240px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    background-image: url(img/aloha-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+    font-size: 0;
+}
+
+.shoppingCard {
+    width: 80px;
+    height: 80px;
+    background-image: url(img/cart-icon.svg); 
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    font-size: 0;
+}
+
+.hero {
+    height: 383px;
+    text-align: center;
+    color: white;
+    background-image: url(img/flower-bkgd.jpg);
+}
+
+.hero section {
+    vertical-align: middle;
+}
+
+.hero .extra1 {
+    align-self: center;
+    width: auto;
+    height: 380px;
+    background-image: url(img/banner-girl.png); 
+    background-repeat: no-repeat;
+    background-size: auto 380px;
+}
+
+.subscribeSection {
+    width: auto;
+    height: 180px;
+    background-image: url(img/wave-bkgd.jpg); 
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    
+    line-height: 20px;
+}
+
+.subscribeForm {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.subscribeForm input {
+    display: inline;
+    outline: none;
+    border: none;
+}
+
+.subscribeForm input:focus {
+    display: inline;
+    outline: none;
+    border: none;
+}
