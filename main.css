@@ -44,11 +44,16 @@ a:active {
     width: 1240px;
 }
 
-.hideText{
+.hideText {
     font-size: 0;
 }
 
-em{
+em {
+    font-weight: bolder;
+    font-style: normal;
+}
+
+strong {
     font-weight: bolder;
     font-style: normal;
 }
@@ -60,10 +65,27 @@ em{
 /*-------------------------------*/
 
 .mainHeader{
-    width: 100%;
-    display: inline-flex;
+    width: 96%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.mainHeader > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainHeader > section {
+    min-width: 120px;
+    justify-content: flex-start; 
+}
+.mainHeader > aside {
+    min-width: 60px;
+    justify-content: flex-end;
 }
 
 .mainHeader .logo {
@@ -79,11 +101,14 @@ em{
     width: 100%;
 }
 .mainHeader nav ul{
-    min-width: 200px;
+    min-width: 150px;
 
     text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
 
     list-style: none;
+    
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
@@ -93,19 +118,10 @@ em{
     display: inline;
 }
 
-.mainHeader nav a:link {
-    color: #e2574c;
-}
-
-.mainHeader nav a:visited {
-    color: #e2574c;
-}
-
-.mainHeader nav a:hover {
-    color: #e2574c;
-}
-
-.mainHeader nav a:active {
+.mainHeader nav a:link,
+.mainHeader nav a:visited,
+.mainHeader nav a:hover,
+.mainHeader nav a:active  {
     color: #e2574c;
 }
 
@@ -115,6 +131,13 @@ em{
     height: 60px;
     margin-right: 10px;
 }
+
+.shoppingCard > div,
+.shoppingCard > div > a{
+    width: 60px;
+    height: 60px;
+}
+
 .shoppingCard .shoppingCardImg {
     position: absolute;
     top: 0;
@@ -141,6 +164,18 @@ em{
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
     font-weight: bolder;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .mainHeader nav{
+        order: 3;
+        padding-top: 9px;
+        border-top: 1px solid lightgrey;
+    }
+    .shoppingCard {
+        order: 2;
+    }
 }
 
 /*-------------------------------*/
@@ -229,7 +264,7 @@ em{
 
 .categories ul li{
     width: calc(25% - 5px);
-    min-width: 100px;
+    min-width: 150px;
     max-width: 350px;
     height: 25vw;
     min-height: 100px;
@@ -247,7 +282,7 @@ em{
 .categories ul li:first-child,
 .categories ul li:last-child{
     width: calc(50% - 5px);
-    min-width: 200px;
+    min-width: 300px;
     max-width: 650px;
 }
 
