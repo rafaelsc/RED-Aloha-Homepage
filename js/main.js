@@ -1,4 +1,9 @@
 
 $(function(){
-    console.log("Hello com main.js");
+    
+    $('.main-carousel').flickity({ 
+        cellAlign: 'left', 
+        groupCells: true 
+    });
+
 })
