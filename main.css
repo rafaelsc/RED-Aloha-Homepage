@@ -171,29 +171,6 @@ strong {
     font-weight: bolder;
 }
 
-/* *********************************** */
-
-@media only screen and (max-width: 599px) {
-
-    .shoppingCard {
-        order: 2;
-    }
-
-    .mainHeader nav{
-        width: 100%;
-        max-width: 590px;
-
-        order: 3;
-        padding-top: 9px;
-        border-top: 1px solid lightgrey;
-    }
-
-    .mainHeader > section,
-    .mainHeader > aside  {
-        flex: 1;
-    }
-
-}
 
 /*-------------------------------*/
 
@@ -310,19 +287,9 @@ strong {
     align-items: center; 
 }
 
-
-.categories a:link {
-    color: white;
-}
-
-.categories a:visited {
-    color: white;
-}
-
-.categories a:hover {
-    color: white;
-}
-
+.categories a:link,
+.categories a:visited,
+.categories a:hover,
 .categories a:active {
     color: white;
 }
@@ -492,18 +459,23 @@ strong {
     width: 100%;
     height: 40vh;
     max-height: 400px;
-    display: inline-flex;
-    flex-flow: wrap;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center; 
+    
     text-align: center;
     line-height: 2em;
     color: white;
 }
 
 .subscribeSection section {
-    width: 100%;
-    margin: 0, 20px, 0, 20px;
+    min-width: 250px;
+    /* width: 100%; */
+    max-width: 600px;
+    margin: 0 10px;
+
     display: inline-flex;
     justify-content: center; 
     align-items: center; 
@@ -511,7 +483,7 @@ strong {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 .subscribeSection section:first-child {
-    padding-top: 3rem; 
+    padding-top: 2rem; 
 }
 .subscribeSection h2{
     color: white;
@@ -522,7 +494,9 @@ strong {
 }
 
 .subscribeForm {
-    width: 400px;
+    min-width: 290px;
+    width: 100%;
+    max-width: 450px;
     margin-top: 20px;
     margin-bottom: 25px;
 
@@ -547,12 +521,14 @@ strong {
 }
 
 .subscribeForm button {
+    min-width: 90px;
     width: 25%;
     outline: none;
     border: none;
     border-radius: 28px;
-    /* text-shadow: 1px 1px 3px #666666; */
-    font-family: Arial;
+ 
+    /* font-family: Arial; */
+    text-align: center;
     color: #ffffff;
     background: #e2574c;
     padding: 10px 20px 10px 20px;
@@ -593,9 +569,13 @@ strong {
 }
 
 .mainFooter section{
-    margin-right: 10px;
+    margin: 0 10px;
     width: 100%;
     line-height: 160%
+}
+
+.mainFooter section .phone{
+    margin-top: 10px;
 }
 
 .mainFooter section address{
@@ -605,6 +585,7 @@ strong {
 }
 
 .mainFooter aside{
+    margin-top: 30px;
     min-width: 150px;
     max-width: 350px;
     line-height: 160%
@@ -612,3 +593,59 @@ strong {
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
+
+/* *********************************** */
+
+@media only screen and (max-width: 599px) {
+
+    .shoppingCard {
+        order: 2;
+    }
+
+    .mainHeader nav{
+        width: 100%;
+        max-width: 590px;
+
+        order: 3;
+        padding-top: 9px;
+        border-top: 1px solid lightgrey;
+    }
+
+    .mainHeader > section,
+    .mainHeader > aside  {
+        flex: 1;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    
+    .subscribeSection {
+        line-height: 1.8em;
+        font-size: smaller; 
+    }
+    
+    .mainFooter {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .mainFooter * {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainFooter aside ul {
+        display: inline-flex
+    } 
+
+    .mainFooter aside li div {
+        width: 35px;
+        font-size: 0;
+    } 
+
+}
