@@ -653,3 +653,9 @@ strong {
     } 
 
 }
+
+@media screen and (min-width: 1240px) {
+    .categories ul li{
+        height: calc(1240px /4);
+    }
+  }
