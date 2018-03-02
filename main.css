@@ -190,17 +190,18 @@ strong {
 }
 
 .hero .text {
+    margin: 15px;
     text-align: center;
-    text-shadow: 2px 2px 4px hsla(0,0%,50%,.8);
+    text-shadow: 2px 2px 4px hsla(0,0%,10%,.8);
 }
 
 .hero h2 {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
 }
 .hero h3 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     padding-top: 1rem;
     color: white;
 }
