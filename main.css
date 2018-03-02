@@ -10,17 +10,16 @@ body {
     margin: 0 auto;
 
     font-size: 16px;
-    font-family: 'Raleway', Arial, sans-serif;    ;
+    font-family: Raleway, Arial,sans-serif;    ;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Playfair Display, Arial,serif;
+}
+
+h1,h2,h3,h4,h5,h6,
 nav {
-    font-family: 'Raleway Light';
     color: #e2574c;
 }
 
@@ -290,6 +289,7 @@ strong {
 .categories a:visited,
 .categories a:hover,
 .categories a:active {
+    font-weight: 500;
     color: white;
     text-shadow: 2px 2px 4px hsla(0,0%,50%,.8);
 }
@@ -397,7 +397,7 @@ strong {
 } */
 
 .product {
-    width: 300px;
+    width: 320px;
     height: 550px;
     font-size: 1rem;
 
@@ -623,6 +623,10 @@ strong {
 
 @media only screen and (max-width: 450px) {
     
+    body {
+        font-size: 14px;
+    }
+
     .subscribeSection {
         line-height: 1.8em;
         font-size: smaller; 
