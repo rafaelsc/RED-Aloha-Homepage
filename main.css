@@ -600,7 +600,7 @@ strong {
 
 /* *********************************** */
 
-@media only screen and (max-width: 599px) {
+@media screen and (max-width: 599px) {
 
     .shoppingCard {
         order: 2;
@@ -622,7 +622,7 @@ strong {
 
 }
 
-@media only screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
     
     body {
         font-size: 14px;
@@ -638,7 +638,6 @@ strong {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-
         text-align: center;
     }
 
