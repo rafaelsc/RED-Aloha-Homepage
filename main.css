@@ -192,7 +192,7 @@ strong {
 
 .hero .text {
     text-align: center;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); 
+    text-shadow: 2px 2px 4px hsla(0,0%,50%,.8);
 }
 
 .hero h2 {
@@ -291,6 +291,7 @@ strong {
 .categories a:hover,
 .categories a:active {
     color: white;
+    text-shadow: 2px 2px 4px hsla(0,0%,50%,.8);
 }
 
 .menCat{
