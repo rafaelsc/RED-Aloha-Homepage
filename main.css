@@ -98,8 +98,7 @@ strong {
     margin-left: 10px;
     background-image: url(img/aloha-logo.svg);
     background-repeat: no-repeat;
-    background-size: 120px 120px;
-    background-position-y: -30px;
+    background-size: 120px auto;
 }
 .mainHeader nav{
     min-width: 300px;
@@ -361,11 +360,15 @@ strong {
     padding-bottom: 1rem;
 }
 
-.products section{
+.products>section{
     width: 100%;
 }
 
-.products ul{
+.products div.main-carousel{
+    margin-bottom: 60px;
+}
+/* 
+.products div.main-carousel{
     width: 100%;
     
     list-style: none;
@@ -379,7 +382,7 @@ strong {
     align-items: center;
 }
 
-.products ul li{
+.products div.carousel-cell{
     width: 22%;
     min-width: 150px;
     max-width: 350px;
@@ -390,11 +393,11 @@ strong {
     flex-flow: wrap;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .product {
     width: 300px;
-    height: 450px;
+    height: 550px;
     font-size: 1rem;
 
     display: inline-flex;
@@ -585,7 +588,6 @@ strong {
 }
 
 .mainFooter aside{
-    margin-top: 30px;
     min-width: 150px;
     max-width: 350px;
     line-height: 160%
@@ -642,7 +644,9 @@ strong {
     .mainFooter aside ul {
         display: inline-flex
     } 
-
+    .mainFooter aside {
+        margin-top: 30px;
+    }
     .mainFooter aside li div {
         width: 35px;
         font-size: 0;
