@@ -582,7 +582,6 @@ strong {
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-
 /* *********************************** */
 
 /* Tablet */
@@ -658,7 +657,17 @@ strong {
     } 
 
 }
+@media screen and (max-width: 360px) {
+    body {
+        font-size: 10px;
+    }
 
+    .mainHeader nav ul{
+        font-size: 1rem;
+    }
+}
+
+/* Desckop */
 @media screen and (min-width: 1240px) {
     .categories ul li{
         height: calc(1240px /4);
