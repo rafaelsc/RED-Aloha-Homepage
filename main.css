@@ -153,20 +153,22 @@ strong {
 }
 .shoppingCard .shoppingCardItens {
     position: absolute;
-    top: 0;
+    top: -6px;
     right: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
-    border-color: black;
-    border-width: 2px;
-    background: #73AD21;
+    background: #e2574c;
 
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
+
     font-weight: bolder;
+    color: whitesmoke;
+
+    display: none;
 }
 
 
