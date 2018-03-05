@@ -16,9 +16,9 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Playfair Display', Arial, serif;
+    color: #e2574c;
 }
 
-h1,h2,h3,h4,h5,h6,
 nav {
     color: #e2574c;
 }
@@ -161,14 +161,12 @@ strong {
     border-radius: 50%;
     background: #e2574c;
 
-    display: flex;
+    display: none;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
 
     font-weight: bolder;
     color: whitesmoke;
-
-    display: none;
 }
 
 
@@ -461,7 +459,10 @@ strong {
 
 .subscribeSection section {
     min-width: 250px;
+    width: 100%;
     max-width: 600px;
+    
+    padding: 0 10px;
     margin: 0 10px;
 
     display: inline-flex;
@@ -482,11 +483,9 @@ strong {
 }
 
 .subscribeForm {
-    min-width: 290px;
     width: 100%;
     max-width: 450px;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin: 20px 5px;
 
     background: white;
     border-radius: 28px;
@@ -522,11 +521,6 @@ strong {
     padding: 10px 20px 10px 20px;
     text-decoration: none;
 }
-.subscribeForm input:focus {
-    background: #dea6a2;
-    text-decoration: none;
-}
-
 
 /* --------------------------------------------------- */
 
