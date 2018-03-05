@@ -224,8 +224,7 @@ main{
 /* --------------------------------------------------- */
 
 .about{
-    height: 35vh;
-    max-height: 250px;
+    height: 280px;
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -458,7 +457,7 @@ main{
     background: url('img/wave-bkgd.jpg') bottom center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 40vh;
+    height: 280px;
     max-height: 400px;
 
     display: flex;
