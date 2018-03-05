@@ -27,16 +27,14 @@ ul {
     list-style-type: none;
 }
 
-a:link {
-    text-decoration: none;
-}
-
+a:link,
 a:visited {
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #b64036
 }
 
 a:active {
@@ -401,7 +399,7 @@ strong {
 .product figcaption{
     font-size: 0.8rem;
     text-transform: uppercase;
-    color: darkgray;
+    color: #969696;
 }
 
 .product .title {
@@ -414,7 +412,7 @@ strong {
 
 .product .price {
     font-weight: bold; 
-    color: gray;
+    color: #969696;
 }
 
 .products footer {
@@ -525,8 +523,8 @@ strong {
 /* --------------------------------------------------- */
 
 .mainFooter {
-    color: whitesmoke;
-    background-color: black;
+    color: #fff;
+    background-color: #242424;
     margin-top: 10px;
 
     padding: 50px 35px;
@@ -538,7 +536,7 @@ strong {
 
 .mainFooter h2,
 .mainFooter a {
-    color: whitesmoke;
+    color: #fff;
 }
 
 .mainFooter a.email{
@@ -547,7 +545,7 @@ strong {
 }
 
 .mainFooter address {
-    color: gray;
+    color: #969696;
 }
 
 .mainFooter section{
@@ -589,7 +587,7 @@ strong {
 
         order: 3;
         padding-top: 9px;
-        border-top: 1px solid lightgrey;
+        border-top: 1px solid #d7d7d7;
     }
 
     .mainHeader > section,
