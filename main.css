@@ -66,9 +66,12 @@ strong {
 /*-------------------------------*/
 
 .mainHeader{
+    min-width: 300px;
     width: 100%;
-    /* margin: 10px auto; */
+    max-width: 1240px;
+    margin: 0px auto;
     padding-top: 10px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -79,6 +82,7 @@ strong {
     z-index: 100;
 
     background-color: white;
+    border-bottom: 1px solid #d7d7d7;
 }
 
 .mainHeader > * {
@@ -177,7 +181,7 @@ strong {
 /*-------------------------------*/
 
 main{
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 /*-------------------------------*/
@@ -603,7 +607,6 @@ main{
         order: 3;
         padding-top: 9px;
         border-top: 1px solid #d7d7d7;
-        border-bottom: 1px solid #d7d7d7;
     }
 
     .mainHeader > section,
