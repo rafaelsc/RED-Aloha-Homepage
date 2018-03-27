@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen">
+
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 </head>
 
 <body>
@@ -228,6 +230,7 @@
             <section>
                 <div class="subscribeForm">
                     <form method="post" action="#" novalidate="novalidate"> 
+                        <label for="emailInput" class="visuallyhidden">Your Email</label>
                         <input id="emailInput" type="email" name="email" placeholder="Your Email"/>
                         <button type="submit">Subscribe</button>
                     </form>
@@ -260,7 +263,6 @@
         </aside>
     </footer>
 
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 
     <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
@@ -271,6 +273,8 @@
     <script src="js/main.js"></script>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <script src="js/vendor/tota11y.min.js"></script>
 </body>
 
 </html>
