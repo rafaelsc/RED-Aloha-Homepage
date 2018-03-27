@@ -184,7 +184,7 @@ main{
     margin-top: 70px;
 }
 
-#main[tabindex="-1"]:focus {
+#feature[tabindex="-1"]:focus {
     outline: 0;
  }
 
