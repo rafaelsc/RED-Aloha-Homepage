@@ -1,6 +1,6 @@
 # Aloha-Homepage
 
-This is the 'Aloha Homepage' a school projet to learn HTML and CSS.
+This is the 'Aloha Homepage' a school project to learn HTML and CSS.
 
 [https://rafaelsc.github.io/RED-Aloha-Homepage/](https://rafaelsc.github.io/RED-Aloha-Homepage/)
 
