@@ -49,5 +49,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# VsCode
+.vs
 
 # End of https://www.gitignore.io/api/macos,windows
