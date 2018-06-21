@@ -28,17 +28,14 @@ ul {
 }
 
 a:link,
-a:visited {
+a:visited,
+a:hover,
+a:active {
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
     color: #b64036
-}
-
-a:active {
-    text-decoration: underline;
 }
 
 .container {
@@ -132,10 +129,14 @@ strong {
 
 .mainHeader nav a:link,
 .mainHeader nav a:visited,
-.mainHeader nav a:hover,
 .mainHeader nav a:active  {
     color: #e2574c;
 }
+
+.mainHeader nav a:hover  {
+    color: #b64036;
+}
+
 
 .shoppingCard {
     position: relative;
@@ -317,6 +318,10 @@ main{
     font-weight: 500;
     color: white;
     text-shadow: 2px 2px 4px hsla(0,0%,50%,.8);
+}
+
+.categories a:hover {
+    color: #f5ebc6;
 }
 
 .menCat{
@@ -560,7 +565,9 @@ main{
 .mainFooter a {
     color: #fff;
 }
-
+.mainFooter a:hover {
+    color: #b64036
+}
 .mainFooter a.email{
     text-decoration: underline;
     font-weight: bold;
