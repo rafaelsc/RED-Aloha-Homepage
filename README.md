@@ -4,6 +4,7 @@ This is the 'Aloha Homepage' a school project to learn HTML and CSS.
 
 [https://rafaelsc.github.io/RED-Aloha-Homepage/](https://rafaelsc.github.io/RED-Aloha-Homepage/)
 
+![Aloha Homepage](https://github.com/rafaelsc/RED-Aloha-Homepage/raw/master/_aloha.jpg)
 -----------------------------------------------
 
 ## Used Technologics
